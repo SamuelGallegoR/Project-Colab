@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{5770037C-8EE2-4E6E-9C66-BCFBFC7206F8}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Controllers/HomeController.cs">
     <Files>
-      <File FileName="Lab1/Controllers/HomeController.cs" Line="14" Column="6" />
+      <File FileName="Lab1/Controllers/HomeController.cs" Line="33" Column="1" />
       <File FileName="Lab1/Views/Home/About.cshtml" />
       <File FileName="Lab1/Views/Home/Index.cshtml" />
       <File FileName="Lab1/Views/Shared/_Layout.cshtml" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>
