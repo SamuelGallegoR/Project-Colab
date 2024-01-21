@@ -1,27 +1,24 @@
 ﻿<Properties StartupConfiguration="{5770037C-8EE2-4E6E-9C66-BCFBFC7206F8}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Brave Browser.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Models/Project.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Lab1/Models/Project.cs" Line="33" Column="1" />
-      <File FileName="Lab1/Controllers/ProjectController.cs" />
-      <File FileName="Lab1/Views/Project/Index.cshtml" />
+      <File FileName="Lab1/Views/Project/Create.cshtml" Line="20" Column="46" />
+      <File FileName="Lab1/Views/Project/Details.cshtml" Line="28" Column="1" />
+      <File FileName="Lab1/Controllers/ProjectController.cs" Line="45" Column="43" />
+      <File FileName="Lab1/Views/Project/Index.cshtml" Line="5" Column="46" />
+      <File FileName="Lab1/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab1" expanded="True">
             <Node name="Lab1">
-              <Node name="Models" expanded="True">
-                <Node name="Project.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
+              <Node name="Views">
                 <Node name="Home" expanded="True" />
-                <Node name="Project" expanded="True" />
+                <Node name="Shared">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -29,5 +26,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

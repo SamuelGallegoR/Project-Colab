@@ -7,11 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace Lab1.Controllers
-{
+namespace Lab1.Controllers //Controller does CRUD
+{ 
     public class ProjectController : Controller
     {
         // GET: /<controller>/
+        [HttpGet]
         public IActionResult Index()
         {
             var projects = new List<Project>()
@@ -23,15 +24,28 @@ namespace Lab1.Controllers
                return View(projects);
         }
 
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            var project = new Project { projectID = id, Name = "Project " + id, Description = "Description of project " + id };
+            return View(project);
+        }
+
+
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
-        public IActionResult Details()
+        [HttpPost]
+        public IActionResult Create(Project project)
         {
-            return View();
+            return RedirectToAction("Index");
         }
-    } 
+
+
+    }
 }
 

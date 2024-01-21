@@ -7,6 +7,7 @@ namespace Lab1.Models
 	{
 		//Attributes
 
+		[Key]
 		public int projectID { get; set; } //This creates a PRIVATE attribute but public getter and setter for the attribute
 
 		[Required] //"Required" annotation
@@ -30,3 +31,4 @@ namespace Lab1.Models
 	}
 }
 
+ 
