@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{5770037C-8EE2-4E6E-9C66-BCFBFC7206F8}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Migrations/20240128231824_InitialCreate.cs">
+    <Files>
+      <File FileName="Lab1/Views/Shared/_Layout.cshtml" />
+      <File FileName="Lab1/wwwroot/css/site.css" />
+      <File FileName="Lab1/Models/Project.cs" />
+      <File FileName="Lab1/Program.cs" />
+      <File FileName="Lab1/appsettings.json" />
+      <File FileName="Lab1/Migrations/ApplicationDbContextModelSnapshot.cs" />
+      <File FileName="Lab1/Migrations/20240128231824_InitialCreate.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lab1" expanded="True">
+            <Node name="Lab1">
+              <Node name="Migrations" expanded="True">
+                <Node name="20240128231824_InitialCreate.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
