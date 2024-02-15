@@ -1,0 +1,91 @@
+﻿@model List<Project>
+@{
+    //Razor block
+    ViewData["Title"] = "Projects";
+    //Name of this page, ALWAYS SET THE TITLE
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
+}
+<h2>Projects</h2>
+
+<a asp-action="Create" class="btn btn-primary"> Create a New Project</a> <!--Hiperlinks only ever invoque get requests inside contriller-->
+
+@if (Model.Any())
+{
+    <style>
+        th, td {
+            padding: 8px; /* Adjust padding as needed */
+            text-align: left; /* Adjust text alignment as needed */
+        }
+    </style>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Action</th> <!-- Column for action buttons: Details, Edit, Delete-->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in Model)
+            {
+                <tr>
+                    <td>@project.ProjectID</td>
+                    <td>@project.Name</td>
+                    <td>@project.Description</td>
+                    <td>
+                        <div style="background-color: @(GetStatusColor(project.Status)); padding: 5px; border-radius: 5px; text-align: center; color: @(project.Status == "New" || project.Status == "On Hold" ? "#ffffff" : "#000000");">@project.Status</div>
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@project.ProjectID" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@project.ProjectID" class="btn btn-secondary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@project.ProjectID" class="btn btn-danger">Delete</a>
+                        <a asp-controller="Task" asp-action="Index" asp-route-projectID="@project.ProjectID" class="btn btn-warning">View Tasks</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+
+}
+else
+{
+    if (searchPerformed)
+    {
+        <p>No projects with the name of description "@searchString" were found. </p>
+
+    }
+    else
+    {
+        <p>No projects available</p>
+    }
+
+}
+
+@{
+    string GetStatusColor(string status)
+    {
+        switch (status)
+        {
+            case "New":
+                return "#8A2BE2"; /* Vibrant purple */
+            case "In Progress":
+                return "#7FFFD4"; /* Light aquamarine */
+            case "In Testing":
+                return "#FFA500"; /* Fun orange */
+            case "On Hold":
+                return "#dc3545"; /* Danger red */
+            case "Completed":
+                return "#32CD32"; /* Vibrant green */
+            default:
+                return "transparent";
+        }
+    }
+}
+
