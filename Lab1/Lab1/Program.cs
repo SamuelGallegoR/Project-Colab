@@ -1,4 +1,6 @@
 ﻿using Lab1.Data;
+using Lab1.Areas;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,7 +43,17 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Project}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=ProjectTask}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
 
 app.Run();
