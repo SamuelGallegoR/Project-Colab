@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Lab1.Data;
-using Lab1.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,16 +11,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab1.Areas.ProjectManagement.Models//Controller does CRUD
 {
+    [Authorize]
     [Area("ProjectManagement")]
     [Route("[area]/[controller]/[action]")]
     public class ProjectController : Controller
     {
 
         private readonly ApplicationDbContext _context;
+        private readonly ILogger<ProjectController> _logger;
 
-        public ProjectController(ApplicationDbContext context)
+        public ProjectController(ApplicationDbContext context, ILogger<ProjectController> logger)
         {
             this._context = context;
+            this._logger = logger;
         }
 
 
@@ -36,6 +39,8 @@ namespace Lab1.Areas.ProjectManagement.Models//Controller does CRUD
             };
             */
 
+            _logger.LogInformation("ProjectController Index Action Called");
+
             var projects = await _context.Projects.ToListAsync();
             return View(projects);
         }
@@ -45,6 +50,10 @@ namespace Lab1.Areas.ProjectManagement.Models//Controller does CRUD
         [HttpGet("Details/{id:int}")]
         public async Task<IActionResult> Details(int id)
         {
+
+            _logger.LogInformation("ProjectController Details Action Called");
+            _logger.LogDebug($"Project pk is: {id}");
+
             //var project = new Project { projectID = id, Name = "Project " + id, Description = "Description of project " + id };
             var project = await _context.Projects.FirstOrDefaultAsync(p => p.ProjectID == id);
             if (project == null)

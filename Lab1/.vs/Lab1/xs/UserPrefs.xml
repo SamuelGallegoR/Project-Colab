@@ -1,20 +1,26 @@
 ﻿<Properties StartupConfiguration="{5770037C-8EE2-4E6E-9C66-BCFBFC7206F8}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Services/EmailSender.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Data/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Lab1/Program.cs" />
-      <File FileName="Lab1/Areas/ProjectManagement/Models/ProjectComment.cs" />
-      <File FileName="Lab1/Areas/ProjectManagement/Controllers/ProjectController.cs" />
-      <File FileName="Lab1/Areas/ProjectManagement/Controllers/TaskController.cs" />
-      <File FileName="Lab1/appsettings.json" />
-      <File FileName="Lab1/Services/EmailSender.cs" Line="35" Column="1" />
+      <File FileName="Lab1/Data/ContextSeed.cs" Line="23" Column="1" />
+      <File FileName="Lab1/Data/ApplicationDbContext.cs" Line="1" Column="1" />
+      <File FileName="Lab1/Enum/Roles.cs" Line="9" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab1" expanded="True">
             <Node name="Lab1" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="EmailSender.cs" selected="True" />
+              <Node name="Data" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
+              </Node>
+              <Node name="Enum" expanded="True" />
+              <Node name="Logs" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ViewModels" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="RoleManager" expanded="True" />
+                <Node name="UserRoles" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -25,8 +31,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Lab1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

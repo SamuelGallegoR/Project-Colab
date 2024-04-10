@@ -242,3 +242,12 @@
 /Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/obj/Debug/net7.0/Lab1.genruntimeconfig.cache
 /Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/obj/Debug/net7.0/ref/Lab1.dll
 /Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/StarkbankEcdsa.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.AspNetCore.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Extensions.Hosting.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Extensions.Logging.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Formatting.Compact.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Settings.Configuration.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Sinks.Console.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Sinks.Debug.dll
+/Users/samuelgallegor/Documents/SGR/George_Brown/Semester 4/C# - Web App Dev./Repository /COMP2139-WebAppDev./Lab1/Lab1/bin/Debug/net7.0/Serilog.Sinks.File.dll

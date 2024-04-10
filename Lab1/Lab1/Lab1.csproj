@@ -23,6 +23,13 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\ProjectSummary\" />
     <None Remove="Services\" />
+    <None Remove="Migrations\" />
+    <None Remove="Enum\" />
+    <None Remove="Views\RoleManager\" />
+    <None Remove="Models\ViewModels\" />
+    <None Remove="Views\UserRoles\" />
+    <None Remove="Components\" />
+    <None Remove="Views\Shared\Components\UserRole\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -41,6 +48,13 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\ProjectSummary\" />
     <Folder Include="Services\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Views\RoleManager\" />
+    <Folder Include="Models\ViewModels\" />
+    <Folder Include="Views\UserRoles\" />
+    <Folder Include="Components\" />
+    <Folder Include="Views\Shared\Components\UserRole\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.15" />
@@ -58,5 +72,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.15" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.11" />
     <PackageReference Include="SendGrid" Version="9.29.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
 </Project>

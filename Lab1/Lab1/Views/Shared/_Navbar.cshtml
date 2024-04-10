@@ -3,22 +3,18 @@
 }
 
 @using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
+@using Lab1.Areas.ProjectManagement.Models;
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">COMP2139</a>
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Project CoLab. <i class="fa-solid fa-circle-nodes"></i></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar to the left: -->
-        <!--
-
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
-        -->
         <!-- Navbar to the Right: -->
         <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
             <form class="d-flex" asp-controller="Home" asp-action="GeneralSearch" method="get">
@@ -44,12 +40,22 @@
                 </li>
 
                 @if (SignInManager.IsSignedIn(User))
-                {
-                    //Profile
-                    <li class="nav-link">
+                    {
+
+                        @await Component.InvokeAsync("UserRole");
+
+                        //Profile
+                    <li class="nav-item d-flex align-items-center">
+
+                        @if (UserManager.GetUserAsync(User).Result.ProfilePicture != null)
+                        {
+                            <img id="profilePicture" style="width: 30px; height: 30px; border-radius: 20px; object-fit: cover; margin-right: 2px;"
+                                 src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.ProfilePicture))" />
+
+                        }
                         <a class="nav-link text-dark"
                            asp-area="Identity"
-                           asp-page="/Account/Manage/Index" title="Manage your account"> <i class="fa fa-user-circle"></i> Profile</a>
+                           asp-page="/Account/Manage/Index" title="Manage your account"> Profile</a>
                     </li>
 
                     //Logout (no log in, no registration)

@@ -1,0 +1,17 @@
+﻿@model dynamic
+
+@if (Model.IsSuperAdmin || Model.IsAdmin) {
+
+        <li class="nav-tiem dropdown">
+            <a id="adminDropdown" class="nav-link dropdown-toggle text-dark" href="#" role="button"
+               data-bs-toggle="dropdown" area-expanded="false">
+
+                <i class="fa-solid fa-lock"></i>Admin
+            </a>
+            <ul class="dropdown-menu" area-labelledby="adminDropdown">
+                <li><a class="dropdown=item" asp-area="" asp-controller="RoleManager" asp-action="Index"><i class="fa-solid fa-users-gear"></i>Role Manager</a></li>
+                <li><a class="dropdown=item" asp-area="" asp-controller="UserRoles" asp-action="Index"><i class="fa-solid fa-circle-user"></i>User Roles</a></li>
+            </ul>
+
+        </li>
+    }
